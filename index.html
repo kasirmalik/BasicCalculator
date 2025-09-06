@@ -3,43 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css" />
-     <script src="script.js" defer></script>
+    <title>Basic Calulator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
+    <!-- BAsic Calculator -->
     <div class="container">
-      <!-- Display -->
-      <div class="calculator">
-        <input type="text" readonly id="display" placeholder="0" />
+      <h1 class="title">Basic Calculator</h1>
+      <hr />
+      <form action="">
+        <!-- Input for Showing Numbers -->
+        <input type="text" class="input" id="input" disabled />
+        <div class="btn-container">
+          <!-- buttons for clear button and % underrot division -->
+          <button class="btn" data-action="clear">C</button>
+          <button class="btn" data-action="sqrt">√</button>
+          <button class="btn" data-action="percent">%</button>
+          <button class="btn operator" data-value="/">÷</button>
 
-        <!-- display calculator container -->
+          <!-- buttons for MR,MC,M+ and M- -->
+          <!-- buttons for MR, MC, M+ and M- -->
+          <button class="btn" data-action="mr">MR</button>
+          <button class="btn" data-action="mc">MC</button>
+          <button class="btn" data-action="mplus">M+</button>
+          <button class="btn" data-action="mminus">M-</button>
 
-        <div class="buttons">
-          <button id="clear-btn" class="btn">C</button>
-          <button class="btn">/</button>
-          <button class="btn">*</button>
-          <button class="btn">-</button>
-          <button class="btn" class="btn">7</button>
-          <button class="btn">8</button>
-          <button class="btn">9</button>
-          <button class="btn">+</button>
-          <button class="btn">4</button>
-          <button class="btn">5</button>
-          <button class="btn">6</button>
-          <button class="btn">.</button>
-          <button class="btn">1</button>
-          <button class="btn">2</button>
-          <button class="btn">3</button>
-          <button class="btn">=</button>
-          <button class="btn" id="zero-btn">0</button>
-
-          <button class="btn">x2</button>
-          <button class="btn">%</button>
-          <button class="btn">√ </button>
+          <!-- buttons for 7,8,9 and multiplication -->
+          <button class="btn" data-value="7">7</button>
+          <button class="btn" data-value="8">8</button>
+          <button class="btn" data-value="9">9</button>
+          <button class="btn operator" data-value="*">&times;</button>
+          <!-- buttons for 4,5,6 and subtraction -->
+          <button class="btn" data-value="4">4</button>
+          <button class="btn" data-value="5">5</button>
+          <button class="btn" data-value="6">6</button>
+          <button class="btn operator" data-value="-">-</button>
+          <!-- buttons for 1,2,3 and addition -->
+          <button class="btn" data-value="1">1</button>
+          <button class="btn" data-value="2">2</button>
+          <button class="btn" data-value="3">3</button>
+          <button class="btn operator" data-value="+">+</button>
+          <!-- buttons for 0,.,+/- and equal to -->
+          <button class="btn" data-value="0">0</button>
+          <button class="btn" data-value=".">.</button>
+          <button class="btn">&#177;</button>
+          <button class="btn operator" id="equal" data-value="=">=</button>
         </div>
-      </div>
+      </form>
     </div>
-   
-  </body> 
+  </body>
 </html>

@@ -1,25 +1,39 @@
-# 🧮 Basic Web Calculator
+A simple Basic Calculator built with HTML, CSS, and JavaScript.
+It supports button clicks, memory functions, and keyboard input.
 
-A simple and user-friendly calculator built using *HTML, **CSS, and **JavaScript*.  
-Supports basic arithmetic operations as well as percentage, square, and square root functions.
+🚀 Features
 
----
+Addition, subtraction, multiplication, division
 
-## 📸 Preview
-![Calculator Preview](screenshot.png)
+Square root (√) and percentage (%)
 
----
+Clear (C)
 
-## ✨ Features
-- Basic arithmetic: +, -, ×, ÷
-- Special functions:
-  - *C* – Clear display
-  - *%* – Percentage calculation
-  - *√* – Square root
-  - *x²* – Square of the number
-- Responsive and clean UI
-- Error handling for invalid expressions
+Toggle sign (±)
 
----
+Memory operations: MR, MC, M+, M-
 
-## 📂 Project Structure
+Keyboard support:
+
+Numbers (0-9) and operators (+ - * / .)
+
+Enter / = → Calculate
+
+Backspace → Delete last character
+
+C → Clear
+
+📂 Project Structure
+basic-calculator/
+│── index.html     # Main HTML file
+│── style.css      # Styling
+│── script.js      # Calculator logic
+│── README.md      # Project documentation
+
+▶️ How to Run
+
+Clone or download this repository.
+
+Open index.html in your browser.
+
+Start calculating! 🎉
